@@ -1,5 +1,7 @@
 Create and configure the MySQL database
 
+mysql -u root -p
+
 
 CREATE DATABASE jiradb CHARACTER SET utf8 COLLATE utf8_bin;
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER,INDEX on jiradb.* TO jirauser@localhost IDENTIFIED BY 'jira';
